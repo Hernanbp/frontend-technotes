@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: inter;
+}
+
+.public-s {
+  height: 100%;
+  min-height: 100vh;
+  background-color: #191920;
+}
+
+.public-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 10vh);
+  padding: 0 10em;
+}
+
+.heading {
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.heading-2 {
+  font-weight: bold;
+}
+
+main > p {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #a2a2be;
+  max-width: 680px;
+  margin-top: 0.5em;
+}
+
+.login-btn {
+  background: #ebd7ca;
+  border-radius: 50px;
+  padding: 1em 3em;
+  max-width: 280px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 3em;
+  cursor: pointer;
+  height: 68px;
+}
+
+.adress {
+  background-color: #ebd7ca;
+  height: 10vh;
+  font-weight: 500;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 0 10em;
+  color: #191920;
+}
+
+@media (max-width: 1000px) {
+  .public-content {
+    padding: 0 5em;
+  }
+  footer {
+    padding: 0 5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .public-content {
+    padding: 0 2em;
+  }
+  .heading {
+    font-size: 40px;
+  }
+  main > p {
+    font-size: 20px;
+    max-width: 500px;
+  }
+  .login-btn {
+    font-size: 16px;
+    height: 56px;
+  }
+  .adress {
+    height: 80px;
+  }
+  footer {
+    padding: 0 2em;
+  }
+}
